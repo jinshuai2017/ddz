@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Document</title>
+    <script type="text/javascript">
+        function resize(){
+            var deviceWidth=document.documentElement.clientWidth;
+            var scale=deviceWidth/750;
+            html.style.zoom=scale;
+            return scale;
+        }
+        resize();
+        window.onresize=resize;
+    </script>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:'Microsoft Yahei';
+        }
+        body{
+            position: relative;
+        }
+        .ddz_aa{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            left: 40px;
+            top: 100px;
+        }
+        .ddz_bb{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            right: 40px;
+            top: 100px;
+        }
+        .ddz_cc{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 860px;
+            left: 40px;
+        }
+        .ksfp{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 200px;
+            height: 60px;
+            color: #fff;
+            outline: none;
+            font-size: 28px;
+            border-radius: 10px;
+            background: #ff7c1b;
+            line-height: 60px;
+            text-align: center;
+            border: 0;
+        }
+        .fammerthree{
+            position: absolute;
+            top: 230px;
+            left: 150px;
+        }
+        .fammerthree li{
+            height: 150px;
+            list-style: none;
+            margin-top: -120px;
+        }
+        .fammerthree li img{
+            position: absolute;
+        }
+        .fammerone{
+            position: absolute;
+            top: 230px;
+            right: 250px;
+        }
+        .fammerone li{
+            height: 150px;
+            list-style: none;
+            margin-top: -120px;
+        }
+        .fammerone li img{
+            position: absolute;
+        }
+        .fammertwo{
+            position: absolute;
+            top: 960px;
+            left: 90px;
+        }
+        .fammertwo li{
+            width: 105px;
+            height: 150px;
+            list-style: none;
+            float: left;
+            margin-left: -78px;
+        }
+        .fammertwo li img{
+            position: absolute;
+        }
+        .fammertwo .img1{
+            margin-left: 0;
+        }
+        .dipai{
+            width: 180px;
+            height: 150px;
+            margin: 0 auto;
+        }
+        .dipai li{
+            width: 105px;
+            float: left;
+            margin-left: -70px;
+            list-style:none;
+        }
+        .dipai li:nth-child(1){
+            margin-left: 0;
+        }
+        .fammertwo li:nth-child(1){
+            margin-left: 30px;
+        }
+        .famerone_btn{
+            position: absolute;
+            width: 100px;
+            top: 360px;
+            left: 30px;
+        }
+        .famerone_yes,.famertwo_yes{
+            width: 92px;
+            height: 38px;
+            border:0;
+            border-radius: 18px;
+            outline: none;
+            background: url(__PUBLIC__/images/yes.jpg) no-repeat 100% 100%;
+        }
+        .chupai_three{
+            visibility: hidden;
+            margin-top: 10px;
+            width: 84px;
+            height: 44px;
+            border:0;
+            border-radius: 18px;
+            outline: none;
+            background: url(__PUBLIC__/images/chupai.jpg) no-repeat 100% 100%;
+        }
+        .chupai_two{
+            visibility: hidden;
+            margin-top: 10px;
+            width: 84px;
+            height: 44px;
+            border:0;
+            border-radius: 18px;
+            outline: none;
+            background: url(__PUBLIC__/images/chupai.jpg) no-repeat 100% 100%;
+        }
+        .chupai_one{
+            visibility: hidden;
+            margin-top: 10px;
+            width: 84px;
+            height: 44px;
+            border:0;
+            border-radius: 18px;
+            outline: none;
+            background: url(__PUBLIC__/images/chupai.jpg) no-repeat 100% 100%;
+        }
+        .famerone_no,.famertwo_no{
+            width: 92px;
+            height: 38px;
+            border-radius: 18px;
+            margin-top:20px;
+            outline: none;
+            background: url(__PUBLIC__/images/no.jpg) no-repeat 100% 100%;
+            border: none;
+        }
+        .famertwo_btn{
+            position: absolute;
+            width: 100px;
+            top: 360px;
+            right: 20px;
+        }
+        .dz_btn{
+            position: absolute;
+            width: 310px;
+            top: 890px;
+            left: 0px;
+            right: 0px;
+            margin: 0 auto;
+        }
+        .dz_yes{
+            width: 92px;
+            height: 38px;
+            border:0;
+            border-radius: 18px;
+            outline: none;
+            background: url(__PUBLIC__/images/yes.jpg) no-repeat 100% 100%;
+        }
+        .dz_no{
+            width: 92px;
+            height: 38px;
+            border-radius: 18px;
+            margin-left: 20px;
+            outline: none;
+            background: url(__PUBLIC__/images/no.jpg) no-repeat 100% 100%;
+            border: none;
+        }
+        .three_zh{
+            position: absolute;
+            top:200px;
+            left: 40px;;
+        }
+        .one_zh{
+            position: absolute;
+            top:200px;
+            right: 50px;;
+        }
+        .two_zh{
+            position: absolute;
+            top:960px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+<button class="ksfp">开始发牌</button>
+<ul class="dipai">
+
+</ul>
+<div>
+    <img src="__PUBLIC__/images/aa.png" class="ddz_aa">
+    <span class="three_zh">3号桌</span>
+    <ul class="fammerthree">
+
+    </ul>
+    <div class="famerone_btn">
+        <button class="famerone_yes" onclick="show_dz('yes',3)"></button>
+        <button class="chupai_three" onclick="show_dz('yes',3)"></button>
+        <button class="famerone_no" onclick="show_dz('no',3)"></button>
+    </div>
+</div>
+<div>
+    <img src="__PUBLIC__/images/bb.png" class="ddz_bb">
+    <span class="one_zh">1号桌</span>
+    <ul class="fammerone">
+
+    </ul>
+    <div class="famertwo_btn">
+        <button class="famertwo_yes" onclick="show_dz('yes',1)"></button>
+        <button class="chupai_one" onclick="show_dz('yes',3)"></button>
+        <button class="famertwo_no" onclick="show_dz('no',1)"></button>
+    </div>
+</div>
+<div>
+    <img src="__PUBLIC__/images/bb.png" class="ddz_cc">
+    <span class="two_zh">2号桌</span>
+    <ul class="fammertwo">
+
+    </ul>
+    <div class="dz_btn">
+        <button class="dz_yes" onclick="show_dz('yes',2)"></button>
+        <button class="chupai_two" onclick="show_dz('yes',3)"></button>
+        <button class="dz_no" onclick="show_dz('no',2)"></button>
+    </div>
+</div>
+</body>
+<script src="__PUBLIC__/js/jquery-1.7.min.js"></script>
+<script type="text/javascript">
+
+        $(".ksfp").click(function(){
+            $.ajax({
+                type:"post",
+                url:"{:url('Index/fapai')}",
+                timeout: 3000,//超时时间
+                success:function(data){
+                    data=eval("("+data+")")
+                    jiapai=data.jiaopai;
+                    var onehaozhuo=document.querySelector(".famertwo_btn");
+                    var twohaozhuo=document.querySelector(".dz_btn");
+                    var threezhuo=document.querySelector(".famerone_btn");
+//                    //出牌按钮隐藏
+//                    var one_chupai=document.querySelector(".chupai_one");
+//                    var two_chupai=document.querySelector(".chupai_two");
+//                    var three_chupai=document.querySelector(".chupai_three");
+//                    one_chupai.style="display :none";
+//                    two_chupai.style="display :none";
+//                    three_chupai.style="display :none";
+
+                    if(jiapai==1){
+                        onehaozhuo.style="display:block";
+                    }else{
+                        onehaozhuo.style="display:none";
+                    }
+                    if(jiapai==2){
+                        twohaozhuo.style="display:block";
+                    }else{
+                        twohaozhuo.style="display:none";
+                    }
+                    if(jiapai==3){
+                        threezhuo.style="display:block";
+                    }else{
+                        threezhuo.style="display:none";
+                    }
+                    var dipai=document.querySelector(".dipai");
+                    var p1=document.querySelector(".fammerone");
+                    var p2=document.querySelector(".fammertwo");
+                    var p3=document.querySelector(".fammerthree");
+                    dipai.innerHTML='';
+                    p1.innerHTML='';
+                    p2.innerHTML='';
+                    p3.innerHTML='';
+                    for(var i=0;i<data.dp.length;i++){
+//                        alert(data.dp[i].pic); //取json中的值
+                        dipai.innerHTML+='<li>'+'<img src="__PUBLIC__/images/brand/'+data.dp[i].pic+'.jpg">'+'</li>';
+                    }
+                    for(var i=0;i<data.player1.length;i++){
+                        p1.innerHTML+='<li>'+'<img src="__PUBLIC__/images/brand/'+data.player1[i].pic+'.jpg">'+'</li>';
+                    }
+                    for(var i=0;i<data.player2.length;i++){
+                        p2.innerHTML+='<li>'+'<img src="__PUBLIC__/images/brand/'+data.player2[i].pic+'.jpg">'+'</li>';
+                    }
+                    for(var i=0;i<data.player3.length;i++){
+                        p3.innerHTML+='<li>'+'<img src="__PUBLIC__/images/brand/'+data.player3[i].pic+'.jpg">'+'</li>';
+                    }
+                }
+            });
+            // alert("您已报名成功，快快收徒吧~");
+            //$(".shy_btn1").css('display','none');
+        })
+//        $('.famertwo_yes').click(function(){
+//
+//        })
+        function show_dz(status,zh){
+        $.ajax({
+            type:"get",
+            url:"{:url('Index/jiaopai')}",
+            data:{
+                'status':status,
+                'zh':zh,
+            },
+            timeout: 3000,//超时时间
+            success:function(data){
+                data=eval("("+data+")")
+                var nextzh=data.nextzh;
+                var status=data.status;
+
+                if(status=='success'){
+//                    alert('恭喜桌号：'+data.zhohao+'是地主成功');
+                    var onehaozhuo=document.querySelector(".chupai_one");
+                    var twohaozhuo=document.querySelector(".chupai_two");
+                    var threezhuo=document.querySelector(".chupai_three");
+                    if(data.zhohao==1){
+                        var p1=document.querySelector(".fammerone"); //重新显示牌
+                        p1.innerHTML='';
+                        for(var i=0;i<data.dz_brand.length;i++){
+                            p1.innerHTML+='<li>'+'<img src="__PUBLIC__/images/brand/'+data.dz_brand[i].pic+'.jpg">'+'</li>';
+                        }
+                        var one_yes=document.querySelector(".famertwo_yes");
+                        var one_no=document.querySelector(".famertwo_no");
+                        onehaozhuo.style="visibility :visible";
+                        one_yes.style="display :none";
+                        one_no.style="display :none";
+                    }
+                    if(data.zhohao==2){
+                        var p2=document.querySelector(".fammertwo");
+                        p2.innerHTML='';
+                        for(var i=0;i<data.dz_brand.length;i++){
+                            p2.innerHTML+='<li>'+'<img src="__PUBLIC__/images/brand/'+data.dz_brand[i].pic+'.jpg">'+'</li>';
+                        }
+                        var two_yes=document.querySelector(".dz_yes");
+                        var two_no=document.querySelector(".dz_no");
+                        twohaozhuo.style="visibility :visible";
+                        two_yes.style="display:none";
+                        two_no.style="display:none";
+                    }
+                    if(data.zhohao==3){
+                        var p3=document.querySelector(".fammerthree");
+                        p3.innerHTML='';
+                        for(var i=0;i<data.dz_brand.length;i++){
+                            p3.innerHTML+='<li>'+'<img src="__PUBLIC__/images/brand/'+data.dz_brand[i].pic+'.jpg">'+'</li>';
+                        }
+                        var three_yes=document.querySelector(".famerone_yes");
+                        var three_no=document.querySelector(".famerone_no");
+                        threezhuo.style="visibility :visible";
+                        three_yes.style="display :none";
+                        three_no.style="display :none";
+                    }
+
+
+
+
+
+
+
+                }else if(status=='fail' || status=='undetermined'){
+                    var onehaozhuo=document.querySelector(".famertwo_btn");
+                    var twohaozhuo=document.querySelector(".dz_btn");
+                    var threezhuo=document.querySelector(".famerone_btn");
+                    if(nextzh==1){
+                        onehaozhuo.style="display:block";
+                    }else{
+                        onehaozhuo.style="display:none";
+                    }
+                    if(nextzh==2){
+                        twohaozhuo.style="display:block";
+                    }else{
+                        twohaozhuo.style="display:none";
+                    }
+                    if(nextzh==3){
+                        threezhuo.style="display:block";
+                    }else{
+                        threezhuo.style="display:none";
+                    }
+                }
+
+
+            }
+        });
+    }
+
+</script>
+</html>
